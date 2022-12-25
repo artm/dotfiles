@@ -2,9 +2,7 @@
 
 set -euo pipefail
 
-dotfiles() {
-  git "--git-dir=$HOME/.config/dotfiles/.git" "--work-tree=$HOME" "$@"
-}
+. $(realpath $(dirname $BASH_SOURCE)/../../.bashrc.d/dotfiles.sh)
 
 dotfiles config --local status.showUntrackedFiles no
 dotfiles checkout $HOME
