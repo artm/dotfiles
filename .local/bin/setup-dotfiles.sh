@@ -7,4 +7,4 @@ dotfiles() {
 }
 
 dotfiles config --local status.showUntrackedFiles no
-dotfiles checkout
+dotfiles checkout .
