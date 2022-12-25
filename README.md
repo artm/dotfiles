@@ -43,9 +43,9 @@ Hence my Dev Containers configuration:
 	- `~/.config/dotfiles`
 
 The articles describe a variation of the technique with the bare cloned
-repository. I find this cleaner than what my integration does, but the Dev
+repository. I find this cleaner than what my integration does, but Dev
 Containers doesn't allow to configure how the cloning is performed, so I'm stuck
-with non-bare variant.
+with the non-bare variant.
 
 
 [1]: https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/
