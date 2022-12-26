@@ -2,12 +2,5 @@
 
 set -euo pipefail
 
-for i in "$@"
-do
-  case "$i" in
-  (-i|-in|--input)
-    tee <&0 | socat - "tcp:host.docker.internal:${clipboard_port:-8121}"
-    exit 0
-    ;;
-  esac
-done
+[[ -d /vscode/vscode-server ]] && clipboard_host=host.docker.internal
+tee <&0 | socat - "tcp:${clipboard_host:-localhost}:${clipboard_port:-8121}"
