@@ -10,8 +10,9 @@
 
 - stock Rocky Linux 9 bash config (perhaps in turn based on RHEL 9 or Fedora, I
   don't know)
-  - files inside `.bashrc.d` are expected to be sourced from `.bashrc` which I
-    don't want to manage at the moment
+  - files inside `.bashrc.d` are expected to be sourced from `.bashrc`
+    - this is only added in 9.x
+    - had to start managing since I had to downgrade `admin-shell` to 8.x
 - personal executables
   - better be avoided, but if I must:
     - executables to be run manually go to `~/bin`
