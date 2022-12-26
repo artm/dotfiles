@@ -1,0 +1,1 @@
+export LPASS_AGENT_TIMEOUT=$(( 12*60*60 ))
