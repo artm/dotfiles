@@ -1,5 +1,14 @@
 # Managed command line configuration
 
+## Installation
+
+```bash
+# or a fork
+git clone https://github.com/artm/dotfiles.git ~/.config/dotfiles
+~/.config/dotfiles/.local/bin/setup-dotfiles.sh
+# herstart shell?
+```
+
 ## Inspiration
 
 - the symlink-less dotfile management technique is based on [the article by
